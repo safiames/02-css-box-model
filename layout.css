@@ -1,0 +1,110 @@
+/* Mobile First (muotoillaan html-sivu ensin mobiili-näkymään ja sitten mahdollisiin muihin näkymiin */
+html {
+  font-size: 62.5%; /* base font size: 62.5% x 16px = 10px */
+}
+body {
+  margin: 1rem;
+  font-family: "Cookie", cursive;
+  font-family: "Sawarabi Mincho", serif;
+}
+h1,
+h2,
+h3,
+p,
+pre,
+ul,
+section {
+  margin-block-end: 1rem;
+}
+section {
+  background-color: #bbddee;
+  padding: 1rem;
+}
+h1 {
+  font-size: 3.2rem;
+}
+h2 {
+  font-size: 2.8rem;
+}
+h3 {
+  font-size: 2.4rem;
+}
+p {
+  font-size: 1.6rem;
+}
+pre {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.6rem;
+  padding-inline-start: 2rem;
+}
+ul {
+  font-size: 1.6rem;
+}
+/* CLASS-tyyppiset säännöt */
+
+.iso-kirjain {
+  float: left;
+  font-size: 500%;
+  width: 1.2em;
+  text-align: center;
+  padding: 0.1em 0.1em 0;
+  background-color: #568;
+  color: white;
+  border: solid white 1px;
+  border-width: 0 0.2em 0.2em 0;
+  margin: -1rem 0.5em 0.2em -1rem;
+}
+
+/* ID-tyyppiset säännöt */
+
+#pikkukuva-vasen-ylanurkka {
+  float: left;
+  margin: -1rem 2rem 2rem -1rem;
+  display: block; /* kuvasta responsiivinen */
+  width: 9rem; /* määrittelee kuvan leveydeksi 90px */
+}
+
+#pikkukuva-vasen-ylanurkka img {
+  max-width: 100%; /* kuvasta responsiivinen */
+}
+
+/*  3. laatikon bannerit paikoilleen*/
+.banner1 {
+  float: left;
+  width: 25%;
+  text-align: left;
+  font-size: 140%;
+  font-weight: bold;
+  font-style: italic;
+  padding: 1em;
+  text-indent: -0.5em;
+  background: white;
+  color: black;
+  border: solid black 1px;
+  border-width: 0 1px 1px 0;
+  margin: 0.2em 5em 0.2em -0.7em;
+}
+
+.banner2 {
+  float: right;
+  width: 25%;
+  text-align: left;
+  font-size: 140%;
+  font-weight: bold;
+  font-style: italic;
+  padding: 1em;
+  text-indent: -0.5em;
+  background: white;
+  color: black;
+  border: solid black 1px;
+  border-width: 1px 0 1px 1px;
+  margin: 0.2em -3em 0.2em 0.5em;
+}
+
+/* Tablet-näkymä ja suuremmat näkymät */
+
+@media only screen and (min-width: 426px) {
+  body {
+    background-color: rgb(230, 173, 219);
+  }
+}
