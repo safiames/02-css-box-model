@@ -3,9 +3,10 @@ html {
   font-size: 62.5%; /* base font size: 62.5% x 16px = 10px */
 }
 body {
-  margin: 1rem;
+  margin: auto;
   font-family: "Cookie", cursive;
   font-family: "Sawarabi Mincho", serif;
+  max-width: 102.4rem;
 }
 h1,
 h2,
@@ -14,7 +15,7 @@ p,
 pre,
 ul,
 section {
-  margin-block-end: 1rem;
+  margin-block-end: 3rem;
 }
 section {
   background-color: #bbddee;
@@ -24,7 +25,16 @@ h1 {
   font-size: 3.2rem;
 }
 h2 {
+  background-color: #88aabb;
   font-size: 2.8rem;
+  text-align: right;
+  text-transform: lowercase;
+  letter-spacing: 3px;
+
+  border-width: 2px 0 0 0;
+  margin-block-start: -1rem;
+  margin-inline: -1rem -1rem;
+  padding: 0.5rem;
 }
 h3 {
   font-size: 2.4rem;
@@ -59,9 +69,20 @@ ul {
 
 #pikkukuva-vasen-ylanurkka {
   float: left;
-  margin: -1rem 2rem 2rem -1rem;
+  margin: -1.2rem 1rem 1rem -1.2rem;
   display: block; /* kuvasta responsiivinen */
   width: 9rem; /* määrittelee kuvan leveydeksi 90px */
+}
+
+#toinen-section {
+  border: 2px solid black;
+}
+
+#toinen-section-h2 {
+  border: none;
+}
+#kolmas-section {
+  border: solid black 2px;
 }
 
 #pikkukuva-vasen-ylanurkka img {
@@ -71,18 +92,16 @@ ul {
 /*  3. laatikon bannerit paikoilleen*/
 .banner1 {
   float: left;
-  width: 25%;
-  text-align: left;
-  font-size: 140%;
-  font-weight: bold;
-  font-style: italic;
-  padding: 1em;
-  text-indent: -0.5em;
-  background: white;
-  color: black;
-  border: solid black 1px;
-  border-width: 0 1px 1px 0;
-  margin: 0.2em 5em 0.2em -0.7em;
+  display: flex;
+  height: 6rem;
+  width: 30rem;
+  margin: -12px 1.7rem 1rem -12px;
+  background-color: white;
+  border: solid black 2px;
+  border-width: 0 2px 2px 0;
+  padding-inline: 1rem 2rem;
+  padding-block-end: 3rem;
+  font-size: 1.6rem;
 }
 
 .banner2 {
@@ -97,14 +116,29 @@ ul {
   background: white;
   color: black;
   border: solid black 1px;
-  border-width: 1px 0 1px 1px;
-  margin: 0.2em -3em 0.2em 0.5em;
+  border-width: 2px 0 2px 2px;
+  margin: 0 -12px 0 0;
 }
 
 /* Tablet-näkymä ja suuremmat näkymät */
 
-@media only screen and (min-width: 426px) {
+/* Tablet- suuremmat */
+
+@media only screen and (min-width: 1024px) {
   body {
-    background-color: rgb(230, 173, 219);
+    background-color: white;
+  }
+  #box3 .banneri {
+    float: left;
+    font-size: 1.4rem;
+    width: 40rem;
+    height: 4rem;
+    text-align: center;
+    padding: 0 10px 5px 0;
+    background: white;
+    color: black;
+    border: solid black 1rem;
+    border-width: 0 1px 1px 0;
+    margin: -1.1rem 0.5em 0.2em -1.1rem;
   }
 }
